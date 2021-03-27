@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./app.js" defer></script>
+  <title>Library</title>
+</head>
+<body>
+  <h1 class="pageTitle">Library</h1>
+  <button class="addBtn">Add New Book</button>
+  <div class="popup">
+    <form class="bookForm">
+      <div class="close">X</div>
+      <div class="form-group">
+        <label for="author">Author:</label>
+        <input required class="author" type="text" id="author">
+      </div>
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input required class="title" type="text" id="title">
+      </div>
+      <div class="form-group">
+        <label for="pages">Pages:</label>
+        <input required class="pages" type="number" id="pages" min="1">
+      </div>
+      <div >
+        <label for="scales">Read?</label>
+        <input class="checkbox" type="checkbox" id="scales" name="scales">
+      </div>
+      <button class="submit" type="submit">Add</button>
+    </form>
+    </div>
+    <div class="bookGrid">
+    </div>
+  </div>
+</body>
+</html>
